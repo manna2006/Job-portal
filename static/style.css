@@ -1,0 +1,641 @@
+/* =========================================
+   🌿 CAREERHUB PROFESSIONAL GREEN THEME
+   Colors: #285A48 + #408A71
+========================================= */
+
+/* 🌐 GLOBAL SETTINGS */
+body {
+    background: linear-gradient(135deg, #285A48, #408A71);
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* ===============================
+   🧭 NAVBAR
+================================ */
+.navbar {
+    background-color: #285A48 !important;
+    padding: 15px 30px;
+}
+
+.navbar a {
+    color: white !important;
+    font-weight: bold;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   🚀 HERO SECTION
+================================ */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ===============================
+   🔍 SEARCH BOX
+================================ */
+.search-box {
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+.search-box input {
+    width: 100%;
+    border-radius: 30px;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+}
+
+/* ===============================
+   💼 JOB CARDS
+================================ */
+.job-card {
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-6px);
+}
+
+.job-card h4 {
+    color: #285A48;
+    font-weight: bold;
+}
+
+/* ===============================
+   🔘 BUTTONS
+================================ */
+.btn-primary {
+    background-color: #408A71;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2f6e5a;
+}
+
+/* ===============================
+   🧡 DASHBOARD LAYOUT
+================================ */
+.dashboard-layout {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    min-height: 100vh;
+    background: #285A48;
+    padding: 25px;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background: #408A71;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ===============================
+   👤 PROFILE PAGE
+================================ */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.profile-avatar {
+    width: 70px;
+    height: 70px;
+    background: #408A71;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.role-badge {
+    background: #408A71;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Profile Sections */
+.profile-section {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+/* Edit Button */
+.edit-btn {
+    background: #408A71;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.edit-btn:hover {
+    background: #2f6e5a;
+}
+
+/* ===============================
+   📬 MESSAGES BUTTON (FLOATING)
+================================ */
+.message-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background: #408A71;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.message-btn:hover {
+    background: #2f6e5a;
+}
+
+/* ===============================
+   📱 RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+}
+/* =========================================
+   🌿 ABOUT SECTION
+========================================= */
+
+.about-section {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 80px 20px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Feature Grid */
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Feature Boxes */
+.feature-box {
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+.feature-box h4 {
+    color: #285A48;
+    margin-bottom: 10px;
+}
+/* =========================================
+   🌿 BIG PROFESSIONAL FOOTER
+========================================= */
+
+.main-footer {
+    background: #1f2e2a;
+    color: #ddd;
+    margin-top: 80px;
+}
+
+/* Top Section */
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.footer-top h5 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-top a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-top a:hover {
+    color: white;
+}
+
+/* Middle Section */
+.footer-middle {
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer-middle h3 {
+    margin-bottom: 15px;
+}
+
+.footer-selects button {
+    background: transparent;
+    border: 1px solid #777;
+    color: white;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer-selects button:hover {
+    background: #408A71;
+    border-color: #408A71;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+.footer-bottom h6 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #aaa;
+}
+/* =========================================
+   ⭐ FEEDBACK / TESTIMONIALS SECTION
+========================================= */
+
+.feedback-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+}
+
+.feedback-section h2 {
+    margin-bottom: 50px;
+    color: white;
+}
+
+/* Container */
+.feedback-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.feedback-card {
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-8px);
+}
+
+/* User Info */
+.feedback-card .user {
+    margin-top: 20px;
+}
+
+.feedback-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.feedback-card h5 {
+    margin: 5px 0 0 0;
+}
+
+.feedback-card span {
+    font-size: 13px;
+    color: #777;
+}
+.score-box {
+    margin-top: 15px;
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 20px;
+    height: 14px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #408A71;
+    height: 100%;
+    transition: width 0.6s ease;
+}
+.skill-tag {
+    background: #408A71;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 4px;
+    display: inline-block;
+    font-size: 13px;
+}
+/* =========================================
+   🌈 MODERN LOGIN PAGE
+========================================= */
+
+.login-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #285A48, #408A71);
+    height: 100vh;
+}
+
+/* Container */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #285A48, #408A71);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.login-left h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.login-left p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* RIGHT SIDE */
+.login-right {
+    flex: 1;
+    background: #f4f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGIN CARD */
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: 350px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+    margin-bottom: 5px;
+}
+
+.login-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* INPUTS */
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background: #408A71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    background: #2f6e5a;
+}
+
+/* REGISTER LINK */
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #408A71;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left {
+        display: none;
+    }
+
+}
+/* SELECT FIELD (REGISTER PAGE) */
+
+.login-card select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: white;
+}
+/* =========================================
+   🌈 ANIMATED GRADIENT BACKGROUND
+========================================= */
+
+.login-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+
+    background: linear-gradient(-45deg,
+        #285A48,
+        #408A71,
+        #2f6e5a,
+        #5aa389
+    );
+
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* 🎓 Education Form Layout */
+
+.edu-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.edu-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.edu-form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+    padding: 0 60px;
+}
+
+.category-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 35px 20px;
+    border-radius: 18px;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.15);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register — CareerHub</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-container">
+
+    <!-- 🌈 LEFT SIDE -->
+    <div class="login-left">
+        <h1>🚀 Join CareerHub</h1>
+        <p>Create your account and unlock new opportunities</p>
+    </div>
+
+
+    <!-- 🧊 RIGHT SIDE -->
+    <div class="login-right">
+
+        <div class="login-card">
+
+            <h2>Create Account ✨</h2>
+            <p>Start your career journey today</p>
+
+            <form method="POST">
+
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Create a password" required>
+
+                <label>Account Type</label>
+                <select name="role" required>
+                    <option value="">Select role</option>
+                    <option value="jobseeker">Job Seeker</option>
+                    <option value="recruiter">Recruiter</option>
+                </select>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+            <p class="register-link">
+                Already have an account?
+                <a href="/login">Login here</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

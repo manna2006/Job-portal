@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CareerHub Premium</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: white;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(12px);
+    padding: 14px 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+    padding: 120px 20px 90px;
+    text-align: center;
+}
+
+.hero-box {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 850px;
+    margin: auto;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* SEARCH */
+
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input,
+.search-bar select {
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    padding-left: 20px;
+}
+
+.search-btn {
+    border-radius: 40px;
+    padding: 0 35px;
+    font-weight: bold;
+}
+
+/* ===== CATEGORY CARDS ===== */
+
+.section-title {
+    text-align: center;
+    margin: 80px 0 40px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+    padding: 0 50px;
+}
+
+.category-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.15);
+}
+
+/* ===== COMPANIES ===== */
+
+.companies {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.company-logo {
+    background: rgba(255,255,255,0.1);
+    padding: 25px 40px;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+/* ===== AI SECTION ===== */
+
+.ai-section {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.ai-box {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 50px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(0,0,0,0.35);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+<nav class="navbar navbar-dark">
+<div class="container">
+
+<a class="navbar-brand logo" href="/">🚀 CareerHub</a>
+
+<div>
+<a href="/login" class="btn btn-outline-light me-2">Login</a>
+<a href="/register" class="btn btn-warning fw-bold">Register</a>
+</div>
+
+</div>
+</nav>
+
+
+<!-- ===== HERO ===== -->
+
+<div class="hero">
+
+<div class="hero-box">
+
+<h1>Find Your Dream Job 💼</h1>
+
+<p>AI-powered hiring platform for modern professionals</p>
+
+<form method="GET" action="/">
+<div class="search-bar">
+
+<input name="q" class="form-control"
+placeholder="Job title, skills, company">
+
+<select class="form-select">
+<option>All Locations</option>
+<option>India</option>
+<option>Remote</option>
+<option>USA</option>
+</select>
+
+<button class="btn btn-warning search-btn">Search</button>
+
+</div>
+</form>
+
+</div>
+
+</div>
+
+
+<h2 class="section-title">🔥 Popular Job Categories</h2>
+
+<div class="categories">
+
+<div class="category-card">💻 Software Development</div>
+<div class="category-card">🤖 AI / Machine Learning</div>
+<div class="category-card">📊 Data Science & Analytics</div>
+<div class="category-card">🎨 UI / UX Design</div>
+<div class="category-card">🌐 Web Development</div>
+<div class="category-card">📱 Mobile App Development</div>
+
+<div class="category-card">🔐 Cyber Security</div>
+<div class="category-card">☁️ Cloud Computing</div>
+<div class="category-card">🧠 DevOps Engineering</div>
+<div class="category-card">🗄️ Database Administration</div>
+<div class="category-card">🧪 Software Testing / QA</div>
+<div class="category-card">⚙️ System Engineering</div>
+
+<div class="category-card">📈 Digital Marketing</div>
+<div class="category-card">💰 Finance & Accounting</div>
+<div class="category-card">👥 Human Resources</div>
+
+
+</div>
+
+<!-- ===== TOP COMPANIES ===== -->
+
+<h2 class="section-title">Top Hiring Companies</h2>
+
+<div class="companies">
+
+<div class="company-logo">Google</div>
+<div class="company-logo">Microsoft</div>
+<div class="company-logo">Amazon</div>
+<div class="company-logo">TCS</div>
+<div class="company-logo">Infosys</div>
+<div class="company-logo">Wipro</div>
+
+</div>
+
+
+<!-- ===== AI SECTION ===== -->
+
+<div class="ai-section">
+
+<div class="ai-box">
+
+<h2>🤖 AI Resume Analysis</h2>
+
+<p>
+Upload your resume and get instant feedback,
+ATS score, skill gaps, and job recommendations.
+</p>
+
+<a href="/profile" class="btn btn-warning mt-3 fw-bold">
+Analyze My Resume
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<!-- ===== FOOTER ===== -->
+
+<div class="footer">
+
+<h4>💼 CareerHub Premium</h4>
+
+<p>Connecting talent with opportunity worldwide</p>
+
+<p>© 2026 CareerHub — All rights reserved</p>
+
+</div>
+
+</body>
+</html>
