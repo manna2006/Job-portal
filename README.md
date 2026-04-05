@@ -61,17 +61,5 @@ careerhub/
 │   ├── messages.html
 │   └── post_job.html
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/careerhub.git
-cd careerhub
-2️⃣ Install Dependencies
-pip install flask mysql-connector-python PyPDF2
-3️⃣ Setup MySQL Database
-Create database: careerhub
-Import tables (see SQL file or README above)
-4️⃣ Run the Application
-python app.py
-5️⃣ Open in Browser
-http://127.0.0.1:5000/
+
 
