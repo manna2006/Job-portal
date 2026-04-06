@@ -42,24 +42,3 @@ Frontend: HTML, CSS, Bootstrap
 Backend: Python (Flask)
 Database: MySQL
 AI Logic: Python (basic NLP + keyword matching)
-
-📂 Project Structure
-careerhub/
-│
-├── app.py
-├── static/
-│   ├── style.css
-│   ├── resumes/
-│   └── profile_pics/
-│
-├── templates/
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   ├── dashboard.html
-│   ├── profile.html
-│   ├── messages.html
-│   └── post_job.html
-
-
-
